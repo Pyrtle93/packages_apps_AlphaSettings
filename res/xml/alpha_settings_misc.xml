@@ -19,6 +19,20 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/misc_title">
 
+    <!-- System Haptics intensities preference -->
+    <PreferenceCategory
+        android:key="haptics_settings"
+        android:title="@string/haptics_settings_title" >
+
+    <Preference
+        android:key="haptics_settings"
+        android:title="@string/haptics_settings_title"
+        android:summary="@string/haptics_settings_summary"
+        android:order="-91"
+        android:fragment="com.alpha.settings.fragments.ui.HapticsPreferenceFragment"/>
+
+   </PreferenceCategory>
+
     <!-- Gaming mode -->
     <Preference
         android:key="gaming_mode"
